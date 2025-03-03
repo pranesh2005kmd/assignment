@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  personal_api:
+    image: "vvraju056/22it056-personal-api"
+    container_name: personal_api
+    restart: always
+    ports:
+      - "5001:5000"
+
+  ml_model:
+    image: "vvraju056/22it056-ml-model"
+    container_name: ml_model
+    restart: always
+    ports:
+      - "5002:5000"
